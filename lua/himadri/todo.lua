@@ -172,9 +172,9 @@ vim.cmd [[
   augroup TodoFile
     autocmd!
     autocmd BufRead,BufNewFile *.todo setlocal filetype=todo
-    autocmd FileType todo lua require('todo').setup_syntax()
-    autocmd FileType todo lua require('todo').setup_keymaps()
-    autocmd FileType todo lua require('todo').setup_folds()
+    autocmd FileType todo lua require('himadri.todo').setup_syntax()
+    autocmd FileType todo lua require('himadri.todo').setup_keymaps()
+    autocmd FileType todo lua require('himadri.todo').setup_folds()
   augroup END
 ]]
 
