@@ -16,7 +16,7 @@ local lazy_config = require "configs.lazy"
 -- load plugins
 require("lazy").setup({
   {
-    "HimadriChakra12/NvChad",
+    "NvChad/NvChad",
     lazy = false,
     branch = "v2.5",
     import = "nvchad.plugins",
@@ -37,5 +37,5 @@ vim.schedule(function()
   require "mappings"
 end)
 vim.schedule(function()
-  require "keybinds"
+  require "himadri/keybinds"
 end)
