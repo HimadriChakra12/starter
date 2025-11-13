@@ -31,7 +31,11 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
 require "autocmds"
+require "himadri.rho"
 
 vim.schedule(function()
   require "mappings"
+end)
+vim.schedule(function()
+  require "keybinds"
 end)
